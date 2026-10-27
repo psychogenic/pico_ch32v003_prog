@@ -275,7 +275,7 @@ class CH32_Flash():
         flash_start_time = time.ticks_us()
         self.unlock_flash()
         self.erase_chip()
-        fhandle = open(filename, "b")
+        fhandle = open(filename, "rb")
         
         datalen = 0
         data = fhandle.read(64)
